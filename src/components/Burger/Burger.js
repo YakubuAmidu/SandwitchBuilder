@@ -1,10 +1,11 @@
 import React from "react";
+
 import './Burger.css';
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
 const Burger = (props) => {
   return(
-    <div className="Buger">
+    <div className="Burger">
       <BurgerIngredient type="bread-top" />
       <BurgerIngredient type="cheese" />
       <BurgerIngredient type="meat" />
