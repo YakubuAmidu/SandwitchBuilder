@@ -7,3 +7,17 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+@medi (min-width: 1000) and (min-height: 700px){
+  .Burger{
+    width: 700px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 401) {
+  .Burger{
+    width: 450px;
+    height: 400px;
+  }
+}
