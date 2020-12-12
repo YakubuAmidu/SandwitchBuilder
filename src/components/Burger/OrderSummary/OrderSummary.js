@@ -1,13 +1,15 @@
 import React from "react";
 
-import Aux from "../../hoc/Aux";
+import Aux from "../../../hoc/Aux";
 
 const OrderSummary = (props) => {
- const ingredientSummary = Object.keys(props.ingredients).
- map((igkey) => {
+ const ingredientSummary = Object.keys(props.ingredients)
+ .map((igkey) => {
    return (
      <li>
-       <span>{igkey}</span>: {props.ingredients[igkey]}
+       <span
+       style={{ textTransform: "capitalize" }}>
+       {igkey}</span>: {props.ingredients[igkey]}
      </li>
    );
  });
@@ -16,7 +18,10 @@ const OrderSummary = (props) => {
     <Aux>
        <h3>Your order</h3>
        <p>A delicious burger with the following ingredients</p>
-
+      <ul>
+        {ingredientSummary}
+        <p>Continue to checkout</p>
+      </ul>
     </Aux>
   );
 };
