@@ -1,9 +1,11 @@
 import React from "react";
 
 const BuildControls = (props) => {
-  return(
+  return (
     <div>
-
+    <div>{props.label}</div>
+    <button>Less</button>
+    <button>More</button>
     </div>
   )
 }
