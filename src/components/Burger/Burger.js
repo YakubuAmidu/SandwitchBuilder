@@ -8,12 +8,12 @@ const Burger = (props) => {
         .map(igkey => {
           return [...Array(props.ingredients[igkey])].map((_, i) => {
             return <BurgerIngredient key={igkey + i} type={igkey} />
-          })
+          });
         });
   return(
     <div className="Burger">
       <BurgerIngredient type="bread-top" />
-      <transformedIngredients />
+      {transformedIngredients}
       <BurgerIngredient type="bread-bottom" />
     </div>
   );
