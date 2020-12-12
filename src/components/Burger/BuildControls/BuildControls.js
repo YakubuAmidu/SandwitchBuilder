@@ -27,7 +27,10 @@ return (
       )
     })
   }
-  <button>ORDER NOW</button>
+  <button
+  className="OrderButton"
+  disabled={this.props.purchasable}
+  >ORDER NOW</button>
     </div>
   )
 }
