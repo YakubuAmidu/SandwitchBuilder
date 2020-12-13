@@ -1,13 +1,13 @@
 import React from "react";
 
 import './NavigationItems.css';
-import NavigationItem from "./NavigationItem";
+import NavigationItem from "../NavigationItem/NavigationItem";
 
 const NavigationItems = () => {
   return(
     <ul className="NavigationItems">
-      <NavigationItem>Burger Builder</NavigationItem>
-      <NavigationItem>Checkout</NavigationItem>
+      <NavigationItem link="/" active>Burger Builder</NavigationItem>
+      <NavigationItem link="/">Checkout</NavigationItem>
     </ul>
   )
 }
