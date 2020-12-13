@@ -1,8 +1,12 @@
 import React from "react";
 
+import './NavigationItem';
+
 const NavigationItem = (props) => {
   return(
-    <li><a href="/">A link</a></li>
+    <li className="NavigationItem">
+    <a href={props.link}>{props.children}</a>
+    </li>
   )
 }
 
