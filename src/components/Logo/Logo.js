@@ -6,7 +6,7 @@ import './Logo.css';
 const Logo = (props) => {
   return(
     <div className="Logo" style={{ height: props.height }}>
-    <img src={burgerLogo} alt="burder-img" />
+    <img src={burgerLogo} alt="burger-img" />
     </div>
   )
 }
