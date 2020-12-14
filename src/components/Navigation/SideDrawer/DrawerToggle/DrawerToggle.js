@@ -1,9 +1,9 @@
 import React from "react";
 
-const drawerToggle = (props) => {
+const DrawerToggle = (props) => {
   return(
-    <div>MENU</div>
+    <div clicked={props.clicked}>MENU</div>
   )
 }
 
-export default drawerToggle;
+export default DrawerToggle;
